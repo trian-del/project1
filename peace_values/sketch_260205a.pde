@@ -1,12 +1,20 @@
+//Tristan Sun
+//Block 2-1
+
 size(600,600);
+
+//text setup
+PFont cour;
+cour = createFont("cour.ttf", 128);
+
 float a, b, c;
 a = HALF_PI+QUARTER_PI;
 b = PI+HALF_PI;
 c = PI+HALF_PI+QUARTER_PI;
 
-//background
 noFill();
 strokeWeight(100);
+
 
 //red
 stroke(255, 80, 80);
@@ -80,6 +88,11 @@ arc(510, 830, 300, 300, b, c);
 stroke(197, 122, 232);
 arc(50,450,300,300,HALF_PI,a);
 arc(60, 750, 300, 300, b, c);
+
+//text
+fill(0);
+textFont(cour);
+text("peace",110,550);
 
 //peace symbol
 noFill();
